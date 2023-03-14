@@ -1,7 +1,7 @@
 
 
 header{
-    background-color: black;
+    background: linear-gradient(to right, black, grey);
     padding: 0.5rem 0
 }
 
@@ -295,6 +295,7 @@ a:hover{
     color: grey;
     background-color: black;
     text-decoration: dotted;
+    transform: skew(20deg);
 }
 
 
