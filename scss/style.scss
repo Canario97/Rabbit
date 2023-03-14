@@ -1,12 +1,20 @@
 
 
 header{
-    background: linear-gradient(to right, black, grey);
-    padding: 0.5rem 0
+    background: linear-gradient(to right, black, grey, black);
+    padding: 0.5rem 0;
+}
+
+body{
+    background: linear-gradient(to right, black, grey, black);
 }
 
 img{
     max-width: 100%;
+}
+
+.intro__image{
+    animation: from-right 1.5s ease;
 }
 
 .container{
@@ -24,6 +32,9 @@ img{
     position: relative;
 
 }
+
+
+
 
 .contact{
     background-color: black;
@@ -75,7 +86,7 @@ img{
 
 
 #intro-section{
-    background-color: black;
+    background: linear-gradient(to right, black, grey, black);
     padding-top: 8rem;
 
     .intro__title{
@@ -117,6 +128,28 @@ img{
     color: white;
     padding-top: 5rem;
     padding-bottom: 5rem;
+}
+
+.aboutus__texttt{
+    color: white;
+}
+
+.contact__infoba{
+    color: white;
+    text-align: center;
+}
+
+.contact__inforos{
+    color: white;
+    text-align: center;
+}
+
+
+.contact__infoemail{
+
+    color: white;
+    text-align: center;
+
 }
 
 .videosection{
@@ -163,7 +196,7 @@ img{
 }
 
 .footer{
-    background-color: black;
+    background: linear-gradient(to right, black, grey, black);
     padding-top: 1rem;
 
     .footer__mediatext{
@@ -214,6 +247,7 @@ body{
 .store__title{
     color: white;
     background-color: black;
+    text-align: center;
 }
 
 .store__image{
@@ -298,7 +332,11 @@ a:hover{
     transform: skew(20deg);
 }
 
-
+.col:hover{
+    color: black;
+    transform: scale(1.2) 
+    
+}
 
 @media (max-width:480px){
     .row{
@@ -318,3 +356,14 @@ a:hover{
 @import "globals";
 @import "navbar";
 @import "index";
+
+@keyframes from-right{
+    0%{
+        opacity: 0;
+        transform: translateX(80px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
